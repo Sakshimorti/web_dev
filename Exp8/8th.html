@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Time Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f3;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      border: 2px solid #ccc;
+      text-align: center;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    td[colspan="2"] {
+      background-color: #e6f7ff;
+      font-weight: bold;
+    }
+
+    td[rowspan="6"], td[rowspan="2"] {
+      background-color: #f9f9f9;
+      color: #333;
+      font-weight: bold;
+    }
+
+    td:last-child, td:nth-last-child(2) {
+      background-color: #fdfdfd;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>College Time Table</h2>
+
+  <table>
+    <tr>
+      <th>Day/Time</th>
+      <th>9:00 - 10:00</th>
+      <th>10:00 - 11:00</th>
+      <th>11:00 - 11:15</th>
+      <th>11:15 - 12:15</th>
+      <th>12:15 - 01:15</th>
+      <th>01:15 - 02:00</th>
+      <th>2:00 - 3:00</th>
+      <th>3:00 - 4:00</th>
+    </tr>
+
+    <tr>
+      <td>Monday</td>
+      <td colspan="2">
+        S1 - DSL (LAB 8)<br>S2 - AOOC (LAB 5)<br>S3 - TPMS (LAB 11)<br>
+        S4 - TTL (LAB 10)<br>S5 - TTL (LAB 12)<br>S6 - WD (LAB 2)
+      </td>
+      <td rowspan="6">BREAK</td>
+      <td>DS</td>
+      <td>MDM</td>
+      <td rowspan="6">LUNCH</td>
+      <td>AT</td>
+      <td>ES</td>
+    </tr>
+
+    <tr>
+      <td>Tuesday</td>
+      <td colspan="2">
+        S1 - WD (LAB 2)<br>S2 - DSL (LAB 8)<br>S3 - AOOC (LAB 5)<br>
+        S4 - TPMS (LAB 11)<br>S5 - TTL (LAB 10)<br>S6 - TTL (LAB 12)
+      </td>
+      <td>AT</td>
+      <td>DS</td>
+      <td>ES</td>
+      <td>WD</td>
+    </tr>
+
+    <tr>
+      <td>Wednesday</td>
+      <td colspan="2">
+        S1 - TTL (LAB 12)<br>S2 - WD (LAB 2)<br>S3 - DSL (LAB 8)<br>
+        S4 - AOOC (LAB 5)<br>S5 - TPMS (LAB 11)<br>S6 - TTL (LAB 10)
+      </td>
+      <td>AOOC</td>
+      <td>MDM</td>
+      <td colspan="2">Dept. Activity</td>
+    </tr>
+
+    <tr>
+      <td>Thursday</td>
+      <td colspan="2">
+        S1 - TTL (LAB 10)<br>S2 - TTL (LAB 12)<br>S3 - WD (LAB 2)<br>
+        S4 - DSL (LAB 8)<br>S5 - AOOC (LAB 5)<br>S6 - TPMS (LAB 11)
+      </td>
+      <td>AOOC</td>
+      <td>DS</td>
+      <td>AT</td>
+      <td>OEC</td>
+    </tr>
+
+    <tr>
+      <td>Friday</td>
+      <td colspan="2">
+        S1 - TPMS (LAB 11)<br>S2 - TTL (LAB 10)<br>S3 - TTL (LAB 12)<br>
+        S4 - WD (LAB 2)<br>S5 - DSL (LAB 8)<br>S6 - AOOC (LAB 5)
+      </td>
+      <td colspan="2">
+        S1 - AOOC (LAB 5)<br>S2 - TPMS (LAB 11)<br>S3 - TTL (LAB 10)<br>
+        S4 - TTL (LAB 12)<br>S5 - WD (LAB 2)<br>S6 - DSL (LAB 8)
+      </td>
+      <td>TPMS</td>
+      <td>OEC</td>
+    </tr>
+
+    <tr>
+      <td>Saturday</td>
+      <td>LL</td>
+      <td>LL</td>
+      <td colspan="2">LL<br>*Self Study</td>
+      <td colspan="2">Dept. Activity</td>
+    </tr>
+
+  </table>
+
+</body>
+</html>
