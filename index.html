@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Development Assignments</title>
+  <!-- Using creative fonts from Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & Base Styles */
+
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #000; /* Black background */
+      color: #fff;
+      padding: 40px 20px;
+      overflow-x: hidden;
+      height: 100vh;
+    }
+
+    h1, h2 {
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+
+    /* Header Style */
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      background: linear-gradient(45deg, #8e44ad, #f39c12);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: bounceIn 1.5s ease-out;
+    }
+
+    /* Section Titles */
+    h2 {
+      font-size: 2.6rem;
+      margin-bottom: 15px;
+      position: relative;
+      color: #f39c12;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 80px;
+      background: #8e44ad;
+      border-radius: 5px;
+      margin: 10px auto;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 50px;
+      padding: 25px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 15px;
+    }
+
+    /* Button Style */
+    .button-group a {
+      background: linear-gradient(135deg, #8e44ad, #f39c12);
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, background 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid transparent;
+      background-size: 200% auto;
+    }
+
+    .button-group a:hover {
+      transform: scale(1.1);
+      background-position: right center;
+      border-color: #8e44ad;
+    }
+
+    .button-group a::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.2), transparent);
+      transform: rotate(45deg);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .button-group a:hover::before {
+      opacity: 1;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 1rem;
+      margin-top: 30px;
+      background-color: #000; /* Black background for footer */
+      border-top: 2px solid #ddd;
+      color: #fff; /* White text */
+    }
+
+    /* Animations */
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      70% {
+        transform: scale(0.9);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 2.2rem;
+      }
+
+      .button-group a {
+        padding: 12px 25px;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      .button-group a {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Web Development Assignments</h1>
+
+  <!-- HTML Assignments Section -->
+  <section id="html-assignments">
+    <h2>HTML Assignments</h2>
+    <div class="button-group">
+      <a href="assignments/html/assignment1.html" target="_blank">Assignment 1</a>
+      <a href="assignments/html/assignment2.html" target="_blank">Assignment 2</a>
+      <a href="assignments/html/assignment3.html" target="_blank">Assignment 3</a>
+      <a href="assignments/html/assignment4.html" target="_blank">Assignment 4</a>
+      <a href="assignments/html/assignment5.html" target="_blank">Assignment 5</a>
+      <a href="assignments/html/assignment6.html" target="_blank">Assignment 6</a>
+      <a href="assignments/html/assignment7.html" target="_blank">Assignment 7</a>
+      <a href="assignments/html/assignment8.html" target="_blank">Assignment 8</a>
+      <a href="assignments/html/assignment9.html" target="_blank">Assignment 9</a>
+      <a href="assignments/html/assignment10.html" target="_blank">Assignment 10</a>
+    </div>
+  </section>
+
+  <!-- CSS Assignments Section -->
+  <section id="css-assignments">
+    <h2>CSS Assignments</h2>
+    <div class="button-group">
+      <a href="assignments/css/assignment1.html" target="_blank">Assignment 1</a>
+      <a href="assignments/css/assignment2.html" target="_blank">Assignment 2</a>
+      <a href="assignments/css/assignment3.html" target="_blank">Assignment 3</a>
+    </div>
+  </section>
+
+  <!-- XML Assignments Section -->
+  <section id="xml-assignments">
+    <h2>XML Assignments</h2>
+    <div class="button-group">
+      <a href="assignments/xml/assignment1.html" target="_blank">Assignment 1</a>
+      <a href="assignments/xml/assignment2.html" target="_blank">Assignment 2</a>
+      <a href="assignments/xml/assignment3.html" target="_blank">Assignment 3</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy;sakshimorti | Web Dev Portfolio
+  </footer>
+
+</body>
+</html>
