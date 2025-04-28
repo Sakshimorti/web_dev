@@ -4,12 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Web Development Assignments</title>
-  <!-- Using creative fonts from Google -->
+  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet" />
   <style>
-    /* Reset & Base Styles */
-
-    
+   
     * {
       box-sizing: border-box;
       margin: 0;
@@ -18,7 +16,7 @@
 
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #000; /* Black background */
+      background-color: #000;
       color: #fff;
       padding: 40px 20px;
       overflow-x: hidden;
@@ -29,20 +27,26 @@
       font-family: 'Poppins', sans-serif;
       text-align: center;
       letter-spacing: 1px;
-      color: #fff;
     }
 
-    /* Header Style */
     h1 {
       font-size: 4rem;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       background: linear-gradient(45deg, #8e44ad, #f39c12);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: bounceIn 1.5s ease-out;
     }
 
-    /* Section Titles */
+    /* Name, Roll No, Batch */
+    .student-info {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 1.2rem;
+      color: #f39c12;
+      font-weight: bold;
+    }
+
     h2 {
       font-size: 2.6rem;
       margin-bottom: 15px;
@@ -60,12 +64,11 @@
       margin: 10px auto;
     }
 
-    /* Sections */
     section {
       margin-bottom: 50px;
       padding: 25px;
       border-radius: 15px;
-      background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+      background: rgba(255, 255, 255, 0.1);
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -73,6 +76,56 @@
     section:hover {
       transform: translateY(-8px);
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+
+   
+    .assignment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #111;
+      border-radius: 15px;
+      padding: 20px;
+      border: 2px solid #333;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #f39c12;
+      box-shadow: 0 15px 35px rgba(243, 156, 18, 0.3);
+    }
+
+    .card h3 {
+      color: #8e44ad;
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    .card p {
+      color: #ccc;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    .card a {
+      text-decoration: none;
+      padding: 10px 25px;
+      background: linear-gradient(45deg, #8e44ad, #f39c12);
+      color: #fff;
+      font-weight: bold;
+      border-radius: 50px;
+      transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+      background: linear-gradient(45deg, #f39c12, #8e44ad);
     }
 
     .button-group {
@@ -83,7 +136,6 @@
       margin-top: 15px;
     }
 
-    /* Button Style */
     .button-group a {
       background: linear-gradient(135deg, #8e44ad, #f39c12);
       padding: 15px 30px;
@@ -123,110 +175,111 @@
       opacity: 1;
     }
 
-    /* Footer */
     footer {
       text-align: center;
       padding: 20px;
       font-size: 1rem;
       margin-top: 30px;
-      background-color: #000; /* Black background for footer */
+      background-color: #000;
       border-top: 2px solid #ddd;
-      color: #fff; /* White text */
+      color: #fff;
     }
 
-    /* Animations */
     @keyframes bounceIn {
-      0% {
-        transform: scale(0.3);
-        opacity: 0;
-      }
-      50% {
-        transform: scale(1.05);
-        opacity: 1;
-      }
-      70% {
-        transform: scale(0.9);
-      }
-      100% {
-        transform: scale(1);
-      }
+      0% { transform: scale(0.3); opacity: 0; }
+      50% { transform: scale(1.05); opacity: 1; }
+      70% { transform: scale(0.9); }
+      100% { transform: scale(1); }
     }
 
-    /* Responsive Adjustments */
     @media (max-width: 768px) {
-      h1 {
-        font-size: 3rem;
-      }
-
-      h2 {
-        font-size: 2.2rem;
-      }
-
-      .button-group a {
-        padding: 12px 25px;
-        font-size: 1rem;
-      }
+      h1 { font-size: 3rem; }
+      h2 { font-size: 2.2rem; }
     }
 
     @media (max-width: 480px) {
-      h1 {
-        font-size: 2.5rem;
-      }
-
-      h2 {
-        font-size: 1.8rem;
-      }
-
-      .button-group a {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-      }
+      h1 { font-size: 2.5rem; }
+      h2 { font-size: 1.8rem; }
     }
   </style>
 </head>
 <body>
 
   <h1>My Web Development Assignments</h1>
+  <div class="student-info">
+    Name: <span style="color:#8e44ad;">Sakshi Morti</span> | Roll No: <span style="color:#8e44ad;">146</span> | Batch: <span style="color:#8e44ad;">S6</span>
+  </div>
 
-  <!-- HTML Assignments Section -->
+  
   <section id="html-assignments">
     <h2>HTML Assignments</h2>
-    <div class="button-group">
-      <a href="assignments/html/assignment1.html" target="_blank">Assignment 1</a>
-      <a href="assignments/html/assignment2.html" target="_blank">Assignment 2</a>
-      <a href="assignments/html/assignment3.html" target="_blank">Assignment 3</a>
-      <a href="assignments/html/assignment4.html" target="_blank">Assignment 4</a>
-      <a href="assignments/html/assignment5.html" target="_blank">Assignment 5</a>
-      <a href="assignments/html/assignment6.html" target="_blank">Assignment 6</a>
-      <a href="assignments/html/assignment7.html" target="_blank">Assignment 7</a>
-      <a href="assignments/html/assignment8.html" target="_blank">Assignment 8</a>
-      <a href="assignments/html/assignment9.html" target="_blank">Assignment 9</a>
-      <a href="assignments/html/assignment10.html" target="_blank">Assignment 10</a>
+    <div class="assignment-grid">
+      <div class="card">
+        <h3>Assignment 1</h3>
+        <a href="./Exp2/2nd.html" target="_blank">View</a>
+      </div>
+      <div class="card">
+        <h3>Assignment 2</h3>
+        <a href="./Exp2/2nd.html "target="_blank">View</a>
+      </div>
+      <div class="card">
+        <h3>Assignment 3</h3>
+        <a href="./Exp3/3rd.html" target="_blank">View</a>
+      </div>
+      <div class="card">
+        <h3>Assignment 4</h3>
+        <a href="./Exp4/4_1th.html" target="_blank">View</a>
+      </div>
+      <div class="card">
+        <h3>Assignment 5</h3>
+        <a href="./Exp5/5th.html" target="_blank">View</a>
+      </div>
+      <div class="card">
+        <h3>Assignment 6</h3>
+        <a href="./Exp6/6th.html" target="_blank">View</a>
+      </div>
+      <div class="card">
+        <h3>Assignment 7</h3>
+        <a href="./Exp7/7th.html" target="_blank">View</a>
+      </div>
+      <div class="card">
+        <h3>Assignment 8</h3>
+        <a href="./Exp8/8th.html" target="_blank">View</a>
+      </div>
+      <div class="card">
+        <h3>Assignment 9</h3>
+        <a href="./Exp9/9th.html" target="_blank">View</a>
+      </div>
+      <div class="card">
+        <h3>Assignment 10</h3>
+        <a href="./Exp10/10th.html" target="_blank">View</a>
+      </div>
+     
     </div>
   </section>
 
-  <!-- CSS Assignments Section -->
+  
   <section id="css-assignments">
     <h2>CSS Assignments</h2>
     <div class="button-group">
-      <a href="assignments/css/assignment1.html" target="_blank">Assignment 1</a>
-      <a href="assignments/css/assignment2.html" target="_blank">Assignment 2</a>
-      <a href="assignments/css/assignment3.html" target="_blank">Assignment 3</a>
+      <a href="./CSS/ExternalCss.html" target="_blank">External</a>
+      <a href="./CSS/InlineCss.html" target="_blank">InlineCss 2</a>
+      <a href="./CSS/InternalCss.html" target="_blank">InternalCss 3</a>
     </div>
   </section>
 
-  <!-- XML Assignments Section -->
+ 
   <section id="xml-assignments">
     <h2>XML Assignments</h2>
     <div class="button-group">
-      <a href="assignments/xml/assignment1.html" target="_blank">Assignment 1</a>
-      <a href="assignments/xml/assignment2.html" target="_blank">Assignment 2</a>
-      <a href="assignments/xml/assignment3.html" target="_blank">Assignment 3</a>
+      <a href="./XML/XML/EXP11/library.xml" target="_blank">Assignment 11</a>
+      <a href="./XML/XML/EXP12/books.xml" target="_blank">Assignment 12</a>
+      <a href="./XML/XML/EXP13/participants.xml" target="_blank">Assignment 13</a>
     </div>
   </section>
 
   <footer>
-    &copy;sakshimorti | Web Dev Portfolio
+    &copy; <strong>Sakshi Morti</strong> | Web Dev Portfolio
   </footer>
 
 </body>

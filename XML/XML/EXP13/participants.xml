@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="participants.xsl"?>
+<participants>
+  <participant>
+    <name>Sakshi Morti</name>
+    <rollNo>139</rollNo>
+    <subject name="Maths">90</subject>
+    <subject name="Physics">85</subject>
+    <subject name="Chemistry">88</subject>
+  </participant>
+  
+  <participant>
+    <name>Sakshi Patil</name>
+    <rollNo>140</rollNo>
+    <subject name="Maths">72</subject>
+    <subject name="Physics">65</subject>
+    <subject name="Chemistry">70</subject>
+  </participant>
+
+  <participant>
+    <name>Gayatri Jadhav</name>
+    <rollNo>141</rollNo>
+    <subject name="Maths">50</subject>
+    <subject name="Physics">55</subject>
+    <subject name="Chemistry">60</subject>
+  </participant>
+</participants>

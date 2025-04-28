@@ -1,0 +1,30 @@
+/* General styling for the entire XML document */
+library {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for each book */
+book {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Styling for book titles */
+title {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Styling for book author and year */
+author, year {
+    font-style: italic;
+    color: #34495e;
+}
